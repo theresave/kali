@@ -1,0 +1,10 @@
+设置中文输入法（root用户）
+1、修改apt镜像源        可以设置为阿里云或者中科大的源，apt源文件在/etc/apt/sources.list里面，不用的要注释掉
+2、更新apt                           apt-get update
+                                    apt-get upgrade
+3、安装ibus                          apt-get install ibus
+4、打开ibus，添加中文输入法
+5、修改~/.bashrc文件，加入三行        export GTK_IM_MODULE=ibus
+                                    export XMODIFIERS=@im=ibus
+                                    export QT_IM_MODULE=ibus
+6、保存，重启。
