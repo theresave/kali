@@ -1,0 +1,2 @@
+# kali
+learning notes
